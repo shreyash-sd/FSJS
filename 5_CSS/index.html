@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #414141;
+        color: #fff;
+      }
+      .imp-label:hover::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: orange;
+      }
+      .btn-primary{
+        background-color: blue;
+        color:purple;
+        padding: 5px 20px 5px 20px;
+        border: 1px outset pink;
+        border-radius: 5px;
+      }
+      .btn-primary:hover{
+        background-color: green;
+      }
+</style>
+<body>
+    <div>
+        <form action="">
+          
+          <label class="imp-label" for="name">name</label>
+          <input type="text" name="name" />
+  
+          <label for="email">email</label>
+          <input type="text" name="email" />
+  
+          <button class="btn-primary" data-tooltip="Tooltip" type="submit">Submit</button>
+        </form>
+        
+        
+      </div>
+</body>
+</html>
